@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    text-decoration: none;
+    font-family: 'Poppins', 'sans-serif';
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.navdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navdiv img{
+    width: 250px;
+    margin-top: 10px;
+}
+.navdiv ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 18px;
+    position: relative;
+}
+.navdiv ul li a{
+    color: #000;
+    transition: .3s ease;
+    font-weight: 500;
+}
+.navdiv ul li a::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: crimson;
+    left: 0;
+    bottom: -10px;
+    position: absolute;
+    transition: .3s ease;
+}
+.navdiv ul li a:hover::after{
+    width: 100%;
+}
+.navdiv ul li a:hover{
+    color: crimson;
+}
+.navbar i{
+    padding: 0 15px;
+    cursor: pointer;
+    font-size: 25px;
+    transition: .1s ease;
+    padding: 10px;
+    border-radius: 50%;
+    color: #000;
+}
+.navbar i:hover{
+    border: 2px solid crimson;
+    font-size: 27px;
+    color: crimson;
+}
+
+
+
+.home{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/home-image.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 60px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main-text{
+    text-align: center;
+}
+.main-text h4{
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.main-text h2{
+    font-size: 40px;
+    padding: 10px;
+}
+.main-text h1{
+    font-size: 50px;
+}
+.main-text button{
+    margin-bottom: 40px;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: transparent;
+    color: #fff;
+    border:  2px solid #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.main-text button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+
+
+.products{
+    padding: 50px;
+}
+.products .product-heading{
+    text-align: center;
+    position: relative;
+}
+.products .product-heading span{
+    color: crimson;
+}
+.products .product-heading h2{
+    font-size: 33px;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px;
+    background: #e8e8e8;
+    padding: 10px;
+}
+
+.container .product{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 40px;
+    border: 2px solid #fff;
+    background: #fff;
+    transition: .3s ease;
+}
+/* .products .container .product:hover{
+    border-radius: 30px;
+    box-shadow: 20px 20px 20px #515151;
+} */
+.container .product img{
+    width: 210px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 10px;
+    transition: .3s ease;
+}
+/* .products .container .product img:hover{
+    width: 200px;
+    height: 230px;
+} */
+.container .product .ratings i{
+    padding: 5px 0;
+    font-size: 19px;
+    color: #FF8C00;
+}
+.container .product button{
+    margin-top: 10px;
+    padding: 10px 5px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    background: crimson;
+    color: #fff;
+    border: 2px solid crimson;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    transition: .3s ease;
+}
+.container .product button i{
+    font-size: 25px;
+}
+.container .product button:hover{
+    background: transparent;
+    color: crimson;
+}
+
+
+
+.offerBanner{
+    color: #fff;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/b1.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 40px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 30px 0;
+}
+.offerBanner h1{
+    margin-top: 20px;
+}
+.offerBanner span{
+    color: crimson;
+}
+.offerBanner button{
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: transparent;
+    color: #fff;
+    border:  2px solid #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.offerBanner button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+
+.newArrival {
+    padding: 50px;
+}
+.ArrivalHeading{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.ArrivalHeading span{
+    color: crimson;
+}
+.ArrivalHeading h2{
+    font-size: 35px;
+}
+
+
+.Custfooter{
+    padding: 50px;
+    padding-bottom: 40px;
+    background: #e8e8e8;
+    display: flex;
+    justify-content: space-around;
+}
+.Custfooter li{
+    list-style: none;
+}
+.Custfooter li a{
+    color: #000;
+    transition: .3s ease;
+    font-weight: 400;
+}
+.Custfooter li a:hover{
+    color: crimson;
+}
+
+.copyright{
+    text-align: center;
+}
+.copyright a{
+    transition: .3s ease;
+    color: #000;
+}
+.copyright a:hover{
+    color: crimson;
+}
